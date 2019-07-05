@@ -1,0 +1,28 @@
+1. Assesment 1     #Input file is input1.txt
+
+echo "Lines containing Entered word:" && grep -n " the " input1.txt && echo "No. of specified word: " && grep -o '\<the\>' input1.txt | wc -l
+
+
+2. Assesment 2
+
+ls *.txt
+input1.txt  input2.txt  test.txt
+
+
+3. Assesment 3
+
+for d in aws_*; do (cd "$d" && pwd); done
+
+
+4. Assesment 4     #Input file is input2.txt
+
+sed -i 's/learning/writing/gi' input2.txt
+
+
+
+5. Assesment 5     #Input file is s3_info.txt
+
+jq '.Records[].s3.bucket.arn' s3_info.txt
+
+
+
